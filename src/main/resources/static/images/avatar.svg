@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="Avatar mac dinh">
+    <circle cx="50" cy="50" r="50" fill="#e2e8f0"/>
+    <circle cx="50" cy="38" r="17" fill="#94a3b8"/>
+    <path d="M50 60c-17 0-30 11-33 26a50 50 0 0 0 66 0C80 71 67 60 50 60z" fill="#94a3b8"/>
+</svg>

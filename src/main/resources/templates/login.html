@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dang nhap - JWT Nimbus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}" href="/css/app.css">
+</head>
+<body>
+<main class="card">
+    <h1>Dang nhap</h1>
+    <p class="muted">Spring Boot 3 &middot; Spring Security 6 &middot; Nimbus JOSE+JWT</p>
+
+    <form id="loginForm" novalidate>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+
+        <button id="Login" type="submit">Login</button>
+    </form>
+
+    <p id="feedback" class="feedback" role="alert"></p>
+
+    <p class="muted">Chua co tai khoan? <a th:href="@{/register}" href="/register">Dang ky</a></p>
+</main>
+
+<script th:src="@{/js/mainjs.js}" src="/js/mainjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang ca nhan - JWT Nimbus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}" href="/css/app.css">
+</head>
+<body>
+<main class="card">
+    <h1>Spring Boot REST API with AJAX</h1>
+    <p class="muted">Du lieu lay tu <code>GET /users/me</code> bang Bearer token trong localStorage</p>
+
+    <img id="avatar" class="avatar" th:src="@{/images/avatar.svg}" src="/images/avatar.svg" alt="avatar" width="100">
+
+    <dl id="profile" class="profile">
+        <dt>Ho ten</dt>
+        <dd data-field="fullName">...</dd>
+        <dt>Email</dt>
+        <dd data-field="email">...</dd>
+        <dt>Quyen</dt>
+        <dd data-field="role">...</dd>
+    </dl>
+
+    <p id="feedback" class="feedback" role="alert"></p>
+
+    <div class="actions">
+        <a class="button" th:href="@{/users}" href="/users" target="_blank" rel="noopener">Xem JSON /users</a>
+        <button id="logout" type="button">Logout</button>
+    </div>
+</main>
+
+<script th:src="@{/js/mainjs.js}" src="/js/mainjs.js"></script>
+</body>
+</html>
